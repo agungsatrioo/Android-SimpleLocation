@@ -1,6 +1,13 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="im.delight.android.location">
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	
+	<uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.network" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="true" />
+	
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="16" />
